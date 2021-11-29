@@ -8,30 +8,24 @@
 //********* Includes *************************************************************
 
 //********* Variables ************************************************************
-int a = 3;
-int b = 2;
-int d;
+int test = 32767;
+
 //********* Setup ****************************************************************
-void setup()               // run once, when the sketch starts
+void setup()              // run once, when the sketch starts
 {
-  Serial.begin(9600);      // set up Serial library at 9600 bps
+  Serial.begin(9600);     //set up Serial library at 9600 bps
+  Serial.print("Test value is: ");
+  Serial.println(test);
 
-  Serial.println("Here is division: ");
-
-  Serial.print("a = ");
-  Serial.println(a);
-  Serial.print("b = ");
-  Serial.println(b);
-
-  d = a / b;
+  test = test + 1;
  
-  Serial.print("a / b = ");
-  Serial.println(d);
+  Serial.print("Now it is: ");
+  Serial.println(test);
 }
-
 
 //********* Loop *****************************************************************
-void loop()     // we need this to be here even though its empty
+void loop()
 {
 }
+
 //********* Funcions *************************************************************
