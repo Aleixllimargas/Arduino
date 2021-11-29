@@ -8,23 +8,28 @@
 //********* Includes *************************************************************
 
 //********* Variables ************************************************************
-long drive_gb = 100;
-long drive_mb = 0;
-
+float a = 3;
+float b = 2;
+float d;
 //********* Setup ****************************************************************
-void setup()             // run once, when the sketch starts
+void setup()               // run once, when the sketch starts
 {
-  Serial.begin(9600);     // set up Serial library at 9600 bps
-  Serial.print("Your HD is ");
-  Serial.print(drive_gb);
-  Serial.println(" GB large.");
+  Serial.begin(9600);      // set up Serial library at 9600 bps
 
-  drive_mb = 1024 * drive_gb;
+  Serial.println("Here is division: ");
 
-  Serial.print("It can store ");
-  Serial.print(drive_mb);
-  Serial.println(" Megabytes!");
+  Serial.print("a = ");
+  Serial.println(a);
+  Serial.print("b = ");
+  Serial.println(b);
+
+  d = a / b;
+ 
+  Serial.print("a / b = ");
+  Serial.println(d);
 }
+
+
 //********* Loop *****************************************************************
 void loop()     // we need this to be here even though its empty
 {
