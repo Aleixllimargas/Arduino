@@ -8,8 +8,8 @@
 //********* Includes *************************************************************
 
 //********* Variables ************************************************************
-int drive_gb = 5;
-int drive_mb = 0;
+long drive_gb = 100;
+long drive_mb = 0;
 
 //********* Setup ****************************************************************
 void setup()             // run once, when the sketch starts
@@ -25,6 +25,7 @@ void setup()             // run once, when the sketch starts
   Serial.print(drive_mb);
   Serial.println(" Megabytes!");
 }
+
 //********* Loop *****************************************************************
 void loop()     // we need this to be here even though its empty
 {
