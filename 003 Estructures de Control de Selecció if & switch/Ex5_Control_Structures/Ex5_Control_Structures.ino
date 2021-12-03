@@ -39,7 +39,7 @@ void setup()
   {
     Serial.print("F");
   } 
-    else if (KgCO2m2>=43.2)
+    else (KgCO2m2>=43.2);
   {
     Serial.print("G");
   }
