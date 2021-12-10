@@ -9,7 +9,9 @@
 
 //********* Variables ************************************************************
 int taula = 2;
-int talua = 3;
+int Taula = 3;
+int Taaula = 4;
+int Taaulaa = 5;
 
 //********* Setup ****************************************************************
 void setup()      
@@ -28,18 +30,40 @@ void setup()
   }
   Serial.begin(9600);     
   Serial.print("Taula de multiplicar del ");
-  Serial.println(taula);
+  Serial.println(Taula);
   for (int i=0; i <= 10; i++)
   {
     delay(100);
-    Serial.print(taula);
+    Serial.print(Taula);
     Serial.print(" x ");
     Serial.print(i);
     Serial.print( " = ");
-    Serial.println(taula*i);    
+    Serial.println(Taula*i);    
   }
-
-
+  Serial.begin(9600);     
+  Serial.print("Taula de multiplicar del ");
+  Serial.println(Taaula);
+  for (int i=0; i <= 10; i++)
+  {
+    delay(100);
+    Serial.print(Taaula);
+    Serial.print(" x ");
+    Serial.print(i);
+    Serial.print( " = ");
+    Serial.println(Taaula*i);    
+  }
+  Serial.begin(9600);     
+  Serial.print("Taula de multiplicar del ");
+  Serial.println(Taaulaa);
+  for (int i=0; i <= 10; i++)
+  {
+    delay(100);
+    Serial.print(Taaulaa);
+    Serial.print(" x ");
+    Serial.print(i);
+    Serial.print( " = ");
+    Serial.println(Taaulaa*i);    
+  }
 
 }
 
