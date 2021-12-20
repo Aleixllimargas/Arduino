@@ -97,7 +97,7 @@ void  loop ()      // necessitem que estigui aquí encara que estigui buit
 
   delay(pausa);
 
-  digitalWrite(segA, LOW);
+  digitalWrite(segA, HIGH);
   digitalWrite(segB, LOW);
   digitalWrite(segC, HIGH);
   digitalWrite(segD, HIGH);
